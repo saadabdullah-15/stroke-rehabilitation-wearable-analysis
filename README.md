@@ -1,5 +1,3 @@
-# 🦿 Stroke Rehabilitation Wearable Analysis
-
 [![Python](https://img.shields.io/badge/Python-3.9-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Google%20Colab-orange.svg)](https://colab.research.google.com/github/saadabdullah-15/stroke-rehabilitation-wearable-analysis/blob/main/stroke_rehabilitation_wearable_data_analysis.ipynb)
