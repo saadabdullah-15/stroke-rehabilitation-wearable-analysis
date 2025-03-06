@@ -24,6 +24,39 @@ stroke-rehabilitation-wearable-analysis/
 
 ---
 
+## 📥 Dataset Citation and Description
+
+This project uses the **Stroke Rehabilitation Wearable Sensor Dataset**, available on **Zenodo**.
+
+### 📌 Citation:
+> Please cite the dataset using the following DOI, which refers to **all versions**:
+>
+> **DOI:** [10.5281/zenodo.10534054](https://doi.org/10.5281/zenodo.10534054)
+
+### 📌 Dataset Description:
+The dataset consists of data from **ten stroke patients** who completed both rehabilitation visits. The dataset includes:
+
+- **Raw Data (`raw/`)**:
+  - Tri-axial acceleration and angular velocity data from IMU sensors.
+  - Participant information such as demographics (height, weight), FAC scores at both visits, and gait improvement evaluations (in `participant_info.csv`).
+
+- **Interim Data (`interim/`)**:
+  - IMU data manually segmented to remove irrelevant movements based on visual inspection.
+  - Cached 3D feet trajectories to speed up gait analysis.
+  - Quality control plots of accelerometer and gyroscope signals.
+  - Angular velocity thresholds used to identify stance phases (in `stance_magnitude_thresholds_manual.csv`).
+
+- **Processed Data (`processed/`)**:
+  - Stride-by-stride spatio-temporal gait parameters.
+  - Aggregated gait parameters including coefficients of variation and symmetry for all walking conditions per participant.
+
+---
+
+### 📌 Link to the dataset:
+- [Zenodo Stroke Rehabilitation Dataset (DOI: 10.5281/zenodo.10534054)](https://doi.org/10.5281/zenodo.10534054)
+
+---
+
 ## 📊 Workflow Summary:
 1. **Data Preprocessing:**
    - Cleaning participant information and IMU datasets.
@@ -85,14 +118,6 @@ stroke-rehabilitation-wearable-analysis/
 - **Pandas**, **NumPy**
 - **Matplotlib**, **Seaborn**
 - **Scikit-learn**
-
----
-
-
----
-
-## 📥 Dataset Reference:
-- Zenodo Stroke Rehabilitation Dataset: [https://zenodo.org/records/10534055](https://zenodo.org/records/10534055)
 
 ---
 
