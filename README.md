@@ -16,11 +16,11 @@ This project analyzes wearable sensor data collected during stroke rehabilitatio
 
 ## 📂 Repository Structure
 
-stroke-rehabilitation-wearable-analysis/
-│
-├── 📄 stroke_rehabilitation_wearable_data_analysis.ipynb  # Main analysis notebook
-├── 📄 README.md                                           # Project documentation
-└── 📄 requirements.txt                                   # Project dependencies
+stroke-rehabilitation-wearable-analysis/  
+│  
+├── 📄 stroke_rehabilitation_wearable_data_analysis.ipynb   # Main analysis notebook  
+├── 📄 README.md                                            # Project documentation  
+└── 📄 requirements.txt                                    # Project dependencies  
 
 ---
 
