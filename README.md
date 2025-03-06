@@ -1,5 +1,11 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/saadabdullah-15/stroke-rehabilitation-wearable-analysis)
-![License](https://img.shields.io/github/license/saadabdullah-15/stroke-rehabilitation-wearable-analysis)
+# 🦿 Stroke Rehabilitation Wearable Analysis
+
+[![Python](https://img.shields.io/badge/Python-3.9-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Google%20Colab-orange.svg)](https://colab.research.google.com/github/saadabdullah-15/stroke-rehabilitation-wearable-analysis/blob/main/stroke_rehabilitation_wearable_data_analysis.ipynb)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)]()
+[![Libraries](https://img.shields.io/badge/Libraries-pandas%2C%20numpy%2C%20matplotlib%2C%20seaborn%2C%20scikit--learn-grey.svg)]()
+
 
 # 🧠 Stroke Rehabilitation Analysis Using Wearable Device Data
 
@@ -48,6 +54,35 @@ The dataset consists of data from **ten stroke patients** who completed both reh
 - [Zenodo Stroke Rehabilitation Dataset (DOI: 10.5281/zenodo.10534054)](https://doi.org/10.5281/zenodo.10534054)
 
 ---
+---
+
+## 🚀 How to Run the Project
+
+Follow these steps to set up and run the project:
+
+---
+
+### ✅ 1. Clone the Repository
+Clone this repository to your local machine or Colab environment:
+```bash
+git clone https://github.com/saadabdullah-15/stroke-rehabilitation-wearable-analysis.git
+cd stroke-rehabilitation-wearable-analysis
+pip install -r requirements.txt
+### Download the Dataset
+This project uses the Stroke Rehabilitation Wearable Sensor Dataset.
+Please download the dataset from Zenodo:
+
+🔗 https://doi.org/10.5281/zenodo.10534054
+
+After downloading:
+
+Extract the contents.
+Place the dataset (e.g., the raw/, interim/, processed/ folders) in your working directory as required by the notebook.
+
+
+
+---
+
 
 ## 📊 Workflow Summary:
 1. **Data Preprocessing:**
