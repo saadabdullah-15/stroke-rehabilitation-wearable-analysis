@@ -4,6 +4,7 @@
 [![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)]()
 [![Libraries](https://img.shields.io/badge/Libraries-pandas%2C%20numpy%2C%20matplotlib%2C%20seaborn%2C%20scikit--learn-grey.svg)]()
 
+---
 
 # 🧠 Stroke Rehabilitation Analysis Using Wearable Device Data
 
@@ -23,11 +24,13 @@ This project analyzes wearable sensor data collected during stroke rehabilitatio
 
 ## 📂 Repository Structure
 
+```
 stroke-rehabilitation-wearable-analysis/  
 │  
 ├── 📄 stroke_rehabilitation_wearable_data_analysis.ipynb   # Main analysis notebook  
 ├── 📄 README.md                                            # Project documentation  
-└── 📄 requirements.txt                                    # Project dependencies  
+└── 📄 requirements.txt                                     # Project dependencies  
+```
 
 ---
 
@@ -36,7 +39,7 @@ stroke-rehabilitation-wearable-analysis/
 This project uses the **Stroke Rehabilitation Wearable Sensor Dataset**, available on **Zenodo**.
 
 ### 📌 Citation:
-> Please cite the dataset using the following DOI, which refers to **all versions**:
+> Please cite the dataset using the following DOI (covers **all versions**):
 >
 > **DOI:** [10.5281/zenodo.10534054](https://doi.org/10.5281/zenodo.10534054)
 
@@ -46,67 +49,66 @@ The dataset consists of data from **ten stroke patients** who completed both reh
 - **Raw Data (`raw/`)**:
   - Tri-axial acceleration and angular velocity data from IMU sensors.
   - Participant information such as demographics (height, weight), FAC scores at both visits, and gait improvement evaluations (in `participant_info.csv`).
----
 
-### 📌 Link to the dataset:
-- [Zenodo Stroke Rehabilitation Dataset (DOI: 10.5281/zenodo.10534054)](https://doi.org/10.5281/zenodo.10534054)
+🔗 **Dataset Link:** [Zenodo Stroke Rehabilitation Dataset (DOI: 10.5281/zenodo.10534054)](https://doi.org/10.5281/zenodo.10534054)
 
----
 ---
 
 ## 🚀 How to Run the Project
 
-Follow these steps to set up and run the project:
+Follow these steps to set up and execute the project:
 
 ---
 
 ### ✅ 1. Clone the Repository
-Clone this repository to your local machine or Colab environment:
 ```bash
 git clone https://github.com/saadabdullah-15/stroke-rehabilitation-wearable-analysis.git
 cd stroke-rehabilitation-wearable-analysis
-pip install -r requirements.txt
-### Download the Dataset
-This project uses the Stroke Rehabilitation Wearable Sensor Dataset.
-Please download the dataset from Zenodo:
-
-🔗 https://doi.org/10.5281/zenodo.10534054
-
-After downloading:
-
-Extract the contents.
-Place the dataset (e.g., the raw/, interim/, processed/ folders) in your working directory as required by the notebook.
 ```
-
 
 ---
 
+### ✅ 2. Install Project Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### ✅ 3. Download the Dataset
+Download the dataset from Zenodo:
+🔗 [https://doi.org/10.5281/zenodo.10534054](https://doi.org/10.5281/zenodo.10534054)
+
+Extract and place `raw/`, `interim/`, and `processed/` in the working directory.
+
+---
+
+### ✅ 4. Run the Analysis Notebook
+- **Google Colab:**  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saadabdullah-15/stroke-rehabilitation-wearable-analysis/blob/main/stroke_rehabilitation_wearable_data_analysis.ipynb)
+
+- **Locally:**  
+```bash
+jupyter notebook stroke_rehabilitation_wearable_data_analysis.ipynb
+```
+
+---
+
+### ✅ 5. Optional: Push Changes to GitHub
+```bash
+git add .
+git commit -m "Updated analysis and results"
+git push origin main
+```
+
+---
 
 ## 📊 Workflow Summary:
-1. **Data Preprocessing:**
-   - Cleaning participant information and IMU datasets.
-   - Handling missing values.
-   - Feature extraction (mean, std, range, energy, etc.) from sensor signals.
-
-2. **Exploratory Data Analysis (EDA):**
-   - Visualizations of participant demographics (age, gender).
-   - Comparison of Visit 1 vs. Visit 2 features.
-   - Analysis of FAC improvement across participants.
-
-3. **Statistical Analysis:**
-   - Paired t-tests on Visit 1 vs. Visit 2 features.
-   - Comparison of feature distributions across improvement groups.
-
-4. **Machine Learning:**
-   - Logistic Regression (best performer).
-   - Random Forest, Support Vector Machine, HistGradientBoosting.
-   - Cross-validation to evaluate model performance.
-   - Confusion matrix visualizations.
-
-5. **Results:**
-   - Logistic Regression achieved the best performance (75% cross-validated accuracy).
-   - High variance in F1-score due to the small dataset.
-   - Inconsistent model performance across folds.
+1. **Data Preprocessing:** Cleaning, missing values, feature extraction.
+2. **EDA:** Visualize demographics, compare visits, analyze FAC improvement.
+3. **Statistical Analysis:** Paired t-tests, feature comparisons.
+4. **Machine Learning:** Logistic Regression, Random Forest, SVM, HistGradientBoosting.
+5. **Results:** Logistic Regression best (75% accuracy), high F1-score variance.
 
 ---
 
@@ -121,19 +123,18 @@ Place the dataset (e.g., the raw/, interim/, processed/ folders) in your working
 ---
 
 ## ⚠️ Limitations:
-- Small dataset (limited participants and visits).
-- High variability across cross-validation folds.
-- Models are sensitive to small data splits.
-- Results should be interpreted with caution.
+- Small dataset.
+- High cross-validation variability.
+- Sensitive to small data splits.
 
 ---
 
 ## 🚀 Future Improvements:
-- Expand the dataset with more participants.
-- Apply balancing techniques (e.g., SMOTE).
-- Perform hyperparameter tuning for model optimization.
-- Explore feature importance to identify key biomechanical markers.
-- Try ensemble methods or stacked models.
+- More participants.
+- Balancing techniques (SMOTE).
+- Hyperparameter tuning.
+- Feature importance exploration.
+- Advanced ensemble methods.
 
 ---
 
@@ -153,4 +154,3 @@ Place the dataset (e.g., the raw/, interim/, processed/ folders) in your working
 
 ## ✨ Author:
 [Saad Abdullah](https://github.com/saadabdullah-15)
-
