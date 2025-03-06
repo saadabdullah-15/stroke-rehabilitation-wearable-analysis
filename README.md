@@ -1,3 +1,6 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/saadabdullah-15/stroke-rehabilitation-wearable-analysis)
+![License](https://img.shields.io/github/license/saadabdullah-15/stroke-rehabilitation-wearable-analysis)
+
 # 🧠 Stroke Rehabilitation Analysis Using Wearable Device Data
 
 This project analyzes wearable sensor data collected during stroke rehabilitation to assess patient recovery progress. The focus is on extracting features from IMU (Inertial Measurement Unit) signals and predicting improvements in the Functional Ambulation Category (FAC) using machine learning models.
